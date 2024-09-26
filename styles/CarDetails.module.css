@@ -1,0 +1,247 @@
+
+/* Card details */
+
+.containerC {
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .contentC {
+  width: 90%;
+  margin-left: 20px;
+  }
+  
+  .titlewrapperC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  margin-top: 20px;
+  }
+  
+  .leftC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .iconC {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  }
+  
+  .productnameC {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #121317;
+  margin-left: 10px;
+  }
+  
+  .descriptionC {
+  height: 20px;
+  margin-top: 20px;
+  }
+  
+  .descriptiontextC {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #AEAEAE;
+  }
+  
+  .priceC {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  }
+  
+  .pricecurrencyC {
+  margin: 0 10px ;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 20px;
+  color: #50AF95;
+  }
+  
+  .priceamountC {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 20px;
+  color: #50AF95;
+  }
+  
+  .specificationsC {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 ;
+  margin-top: 20px;
+  }
+  
+  .specificationyearC {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #AEAEAE;
+  }
+  
+  .specificationdistanceC {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #AEAEAE;
+  }
+  
+  .locationC {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  }
+  
+  .locationtextC {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #AEAEAE;
+  margin-left: 8px;
+  }
+
+  .contactC {
+      margin-top: 20px;
+  }
+  .contactIcons {
+      display: flex;
+  }
+  .gmailC {
+    padding: 5px;
+  }
+  .telegramC {
+    padding: 5px;
+  }
+
+  .tabs {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .tabs h1 {
+    font-size: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 20px;;
+  }
+
+  .propertiesC{
+    border-bottom: 1px #D0D0D0 solid;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .propertiesC:last-child{
+    border-bottom: 0;
+  }
+
+  .propertiesTitleC{
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .propertiesTextC{
+    line-height: 24px;
+  }
+
+  .productTab{
+    text-transform: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #121317;
+  }
+  .productBox{
+    width:100%;
+    margin-top:40px;
+  }
+
+  .productBoxHeader{
+    padding: 24px;
+    margin-bottom:20px;
+  }
+
+  .productBoxBody{
+    padding-left: 16px;
+  }
+
+  .detailsC{
+    color: #121317;
+  }
+
+  .containerPropertiesC{
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #D0D0D0;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    .propertiesC {
+      margin: 0;
+    }
+    .productTab{
+      font-size: 15px;
+    }
+    .productBoxHeader{
+      padding: 0;
+    }
+    .detailsC{
+      width: 100%;
+    }
+  }
+
+
+  @media (min-width: 600px) {
+    .formulario {
+      min-width: 600px;
+    }
+  
+    .grid {
+      width: 100%;
+      flex-direction: files;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .card,
+    .footer {
+      border-color: #222;
+    }
+    .code {
+      background: #111;
+    }
+    .logo img {
+      filter: invert(1);
+    }
+  }

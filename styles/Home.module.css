@@ -83,7 +83,12 @@
   width: 100%;
   padding: 20px;
   display: flex;
+  flex: 1;
   justify-content: space-between;
+}
+
+.tabs h1 {
+  font-size: 100%;
 }
 
 .grid {
@@ -101,8 +106,21 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 330px;
   height: 172px;
+}
+
+.cardsCategories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsCategories:hover,
+.cardsCategories:focus,
+.cardsCategories:active {
+  color: #ed1848;
+  border-color: #ed1848;
 }
 
 .card:hover,
@@ -180,6 +198,12 @@
   text-align: center;
   margin: 30px;
   width: 400px;
+}
+
+.ProductsAll {
+  text-align: center;
+  margin: 30px;
+  width: 100%;
 }
 
 .HowOperateGrid { 
@@ -454,4 +478,31 @@ margin-left: 8px;
   .logo img {
     filter: invert(1);
   }
+}
+
+/* Footer  */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  background-color: #000000;
+}
+
+.footerSocial{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer2 {
+  background-color: #ed1848;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer2 p {
+  color: white;
 }

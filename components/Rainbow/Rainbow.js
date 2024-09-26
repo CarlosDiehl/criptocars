@@ -1,19 +1,16 @@
-import "@rainbow-me/rainbowkit/styles.css";
+import "@rainbow-me/rainbowkit/styles.css"
 import {
   ConnectButton,
   getDefaultWallets,
   darkTheme,
-  RainbowKitProvider, 
-  Theme
-} from "@rainbow-me/rainbowkit";
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { alchemyProvider } from "wagmi/providers/alchemy";
-import { publicProvider } from "wagmi/providers/public";
-import merge from 'lodash.merge';
-
+  RainbowKitProvider
+} from "@rainbow-me/rainbowkit"
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi"
+import { alchemyProvider } from "wagmi/providers/alchemy"
+import { publicProvider } from "wagmi/providers/public"
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [chain.mainnet, chain.polygon],
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
 );
 
@@ -28,7 +25,6 @@ const wagmiClient = createClient({
   provider
 });
 
-
 export default function IndexPage() {
   return (
     <WagmiConfig client={wagmiClient}>
@@ -38,14 +34,14 @@ export default function IndexPage() {
       })}>
         <div
           style={{
-            width: "21vw",
+            marginLeft: '10px',
             height: "10vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: "right"
+            justifyContent: "end",
           }}
         >
-          <ConnectButton />
+          <ConnectButton label="Entrar" />
         </div>
       </RainbowKitProvider>
     </WagmiConfig>
